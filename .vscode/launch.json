@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "type": "debugpy",
+            "request": "launch",
+            "name": "Frontend",
+            "program": "${env:HOME}/.local/bin/flask",
+            "env": {
+                "FLASK_APP": "${workspaceFolder}/nido_frontend",
+                "FLASK_ENV": "development"
+            },
+            "args": [
+                "run",
+                "--no-debugger",
+                "--no-reload"
+            ],
+            "jinja": true
+        }
+    ]
+}
